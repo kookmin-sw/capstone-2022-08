@@ -25,7 +25,7 @@ SNS 내의 악플로 인해 상처 받는 사람들을 보호할 수 있는 최�
 
 ```
 Student ID: 20171603
-E-mail: jje0ng@kookmin.ac.kr
+E-mail: codertimo@gmail.com
 Role: NLP 모델 학습, 모델 서빙
 ```
 
@@ -35,7 +35,7 @@ Role: NLP 모델 학습, 모델 서빙
 
 ```
 Student ID: 20171622
-E-mail: jje0ng@kookmin.ac.kr
+E-mail: parkgeonhu@gmail.com
 Role: 데이터 크롤링 파이프라인, 나쁜말 API 백엔드
 ```
 
@@ -45,6 +45,6 @@ Role: 데이터 크롤링 파이프라인, 나쁜말 API 백엔드
 
 ```
 Student ID: 20171585
-E-mail: jje0ng@kookmin.ac.kr
+E-mail: doremin98@gmail.com
 Role: 나쁜말 API 데모 사이트, 트위치 봇 개발
 ```
