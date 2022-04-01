@@ -1,77 +1,50 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7011123&assignment_repo_type=AssignmentRepo)
-# Welcome to GitHub
+# 나쁜말 Bad-Horse 🤬🐴 
 
-캡스톤 팀 생성을 축하합니다.
+머신러닝 모델을 이용해 **나쁜 말(채팅, 댓글, 게시글 등)을 자동으로 필터링 해 주는 API**
+## 프로잭트 소개
 
-## 팀소개 및 페이지를 꾸며주세요.
+우리는 사람들과 카톡과 같은 메신저를 이용해서 다양한 이야기를 나누기도 하고, 유튜브, 인스타 같은 서비스에 댓글을 남기면서 소통을 합니다.
+하지만 이런 SNS에는 항상 악의적인 사용자인 '어뷰저'들이 존재합니다. 어뷰저들은 의도적으로 악플을 남기면서 사람들에게 지우기 어려운 깊은 상처를 남깁니다.
+저희는 이러한 문제를 해결하기 위해서 "나쁜말 필터링 API"를 만들고자 합니다.
 
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
+'나쁜말 필터링 API' 는 댓글, 채팅, 게시글 등 다양한 텍스트를 입력으로 받고, 해당 텍스트의 의도를 Deep Learning 모델을 이용해 파악하여 나쁜말인지 여부를 분류합니다.
+특정 서비스에 국한된 것이 아니라 API 형태로 제공하기 때문에 기존 또는 새롭게 등장하는 서비스 모두 '나쁜말 필터링 API'를 이용해 나쁜 말들을 제거할 수 있습니다.
+지속적으로 데이터를 추가하면서 모델을 개선하여 신조어를 기반으로 하는 어뷰징도 적극적으로 대응해 나갈 예정입니다.
 
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
+나쁜말은 국민대학교 캡스톤디자인 프로젝트 수업에서 개발되었으며 향후 사업화까지 염두해 두고 있는 프로젝트 입니다.
+SNS 내의 악플로 인해 상처 받는 사람들을 보호할 수 있는 최소한의 장치로서 역할을 다하고 싶습니다.
 
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
+## 팀 소개
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
+'나쁜 말을 필터링할 수 있는 서비스를 만든다' 라는 하나의 목표를 두고 수평적으로 각자의 역할에 최선을 다할 것입니다.
 
-**예시)** 2020년 0조  https://kookmin-sw.github.io/capstone-2020-0/
+**김준성**
 
+![김준성이미지](images/profile/김준성.jpg)
 
-## 내용에 아래와 같은 내용들을 추가하세요.
-
-### 1. 프로잭트 소개
-
-프로젝트
-
-### 2. 소개 영상
-
-프로젝트 소개하는 영상을 추가하세요
-
-### 3. 팀 소개
-
-팀을 소개하세요.
-
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
-
-### 4. 사용법
-
-소스코드제출시 설치법이나 사용법을 작성하세요.
-
-### 5. 기타
-
-추가적인 내용은 자유롭게 작성하세요.
-
-
-## Markdown을 사용하여 내용꾸미기
-
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+Student ID: 20171603
+E-mail: jje0ng@kookmin.ac.kr
+Role: NLP 모델 학습, 모델 서빙
 ```
 
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**박건후**
 
-### Support or Contact
+![박건후이미지](images/profile/박건후.jpg)
 
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+```
+Student ID: 20171622
+E-mail: jje0ng@kookmin.ac.kr
+Role: 데이터 크롤링 파이프라인, 나쁜말 API 백엔드
+```
+
+**김도민**
+
+![김도민이미지](images/profile/김도민.jpg)
+
+```
+Student ID: 20171585
+E-mail: jje0ng@kookmin.ac.kr
+Role: 나쁜말 API 데모 사이트, 트위치 봇 개발
+```
