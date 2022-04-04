@@ -1,0 +1,216 @@
+* {
+    font-family: "Pretendard";
+}
+
+.root {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 100px;
+    line-height: 120px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+}
+
+.chat-container {
+    height: 511px;
+    width: 552px;
+    margin-right: 120px;
+    background-color: #f6f8f7;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between
+}
+
+.chat-message1-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-image {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-style: normal;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19px;
+    color: #727272;
+    margin-left: 24px;
+    padding-bottom: 16px;
+    margin-top: 40px;
+}
+
+.chat-message1 {
+    display: inline;
+    max-width: 321px;
+    background: #d2e7d7;
+    border-radius: 0px 20px 20px 20px;
+    word-wrap: break-word;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 24px;
+}
+
+.chat-message2 {
+    display: inline;
+    max-width: 321px;
+    background: #d2e7d7;
+    border-radius: 0px 20px 20px 20px;
+    word-wrap: break-word;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 136px;
+}
+
+.sender-container {
+    height: 197px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat {
+    border: none;
+    resize: none;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 36px;
+}
+
+.sender-button {
+    width: 155px;
+    height: 64px;
+    color: white;
+    background-color: #008a23;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 16px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    margin-left: 381px;
+}
+
+.result-container {
+    width: 358px;
+    height: 400px;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 100px;
+    margin-left: 129px;
+    margin-top: -59px;
+}
+
+.result-circle {
+    width: 358px;
+    height: 358px;
+    background: #f6f8f7;
+    border: 1px solid #d2e7d7;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bad-horse-text {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: black;
+}
+
+.number-text {
+    color: #008a23;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 120px;
+    font-style: normal;
+    margin-left: 30px;
+}
+
+.percentage-text {
+    color: #008a23;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 120px;
+    font-style: normal;
+    margin-left: 14px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.description {
+    text-align: center;
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+}
+
+.good-horse {
+    width: 93px;
+    height: 39px;
+    border-radius: 4px;
+    background: #f6f8f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.good-horse-text {
+    color: #008a23;
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
