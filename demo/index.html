@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Bad Horse</title>
@@ -26,15 +27,15 @@
                 </p>
                 <div class="sender-container">
                     <textarea id="chat" cols="30" rows="10"></textarea>
-                    <div class="sender-button">평가하기</div>
+                    <div class="sender-button" id="sendButton">평가하기</div>
                 </div>
             </div>
             <div class="result-container">
-                <div class="emoji">😭</div>
+                <div class="emoji" id="resultEmoji">😆</div>
                 <div class="result-circle">
                     <p class="bad-horse-text">나쁜 말 🐎</p>
                     <div class="percentage-container">
-                        <span class="number-text">64</span><span class="percentage-text">%</span>
+                        <span class="number-text" id="percentageText">0</span><span class="percentage-text">%</span>
                     </div>  
                 </div>
             </div>
@@ -48,5 +49,6 @@
             </div>
         </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
