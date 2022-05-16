@@ -48,3 +48,16 @@ Student ID: 20171585
 E-mail: doremin98@gmail.com
 Role: 나쁜말 API 데모 사이트, 트위치 봇 개발
 ```
+
+## 트위치 봇 실행 방법
+* bad-horse-filterbot directory에 .env 파일 생성
+* .env파일에 다음 내용 추가
+```
+TWITCH_BOT_USERNAME = "~~~~~~~~~~"
+TWITCH_OAUTH_TOKEN = "oauth:~~~~~~"
+TWITCH_BOT_CHANNEL = "#~~~~~~~~~~"
+```
+* 다음 코드로 실행
+```
+node bot.js
+```
