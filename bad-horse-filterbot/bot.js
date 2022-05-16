@@ -29,6 +29,7 @@ function onMessageHandler(target, context, msg, self) {
     if (self) { return; }
 
     console.log(`received message: ${msg}`);
+    console.log(JSON.stringify(context));
     messageID = context["id"]
     axios.post('http://3.39.104.73:1366/predict', {
             "text": msg
@@ -36,9 +37,9 @@ function onMessageHandler(target, context, msg, self) {
         .then(function (response) {
             let isBadHorse = response.data["is_bad"];
             let percentage = parseInt(response.data["bad_prob"] * 100);
-            tmiClient.say(target, `${percentage}%`);
             if (isBadHorse) {
                 deleteMessageByID(messageID);
+                tmiClient.say(target, `나쁜 말 하지 마세요 ㅠㅠ ${context["display-name"]}님`);
             }
         })
         .catch(function (error) {
