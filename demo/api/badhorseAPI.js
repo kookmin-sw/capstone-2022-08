@@ -1,6 +1,6 @@
 const API_ENDPOINT = "https://api.badhorse.link/v1";
 
-const getResponseData = (response) => {
+const getResponseData = async(response) => {
     try {
         if (response.ok) {
             const data = await response.json();
@@ -32,9 +32,13 @@ const request = {
         try {
             const response = await fetch(url, {
                 method : 'POST',
+                headers: {
+                    'Accept': "application/json, text/plain, */*",
+                    'Content-Type': "application/json;charset=utf-8"
+                },
                 body : JSON.stringify(body) 
             });
-            const data = getResponseData(response)
+            const data = await getResponseData(response)
             return data
         } catch (e) {
             throw e
@@ -46,6 +50,7 @@ const request = {
 const api = {
     fetchPredict: async (text) => {
         try {
+            console.log({text})
             const data = await request.post(
                 `${API_ENDPOINT}/predict/`,
                 {text}

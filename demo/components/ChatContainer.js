@@ -1,5 +1,5 @@
 export default class ChatContainer {
-    constructor($target) {
+    constructor($target, onClick) {
         this.$content = document.createElement('div')
         this.$content.className = "chat-container"
         this.template = `<div class="chat-message1-container">
@@ -15,19 +15,22 @@ export default class ChatContainer {
                 여러분이 쓰는 문장이 얼마나 나쁜 말인지 알려드리지요.
             </p>`
         this.$content.innerHTML = this.template
-        
+
         this.$sender = document.createElement('div')
         this.$sender.className = "sender-container"
-    
+
         this.$textarea = document.createElement('textarea')
-        this.$textarea.cols =30
-        this.$textarea.rows =10
+        this.$textarea.cols = 30
+        this.$textarea.rows = 10
         this.$textarea.id = "chat"
 
         this.$sendBtn = document.createElement('div')
         this.$sendBtn.className = "sender-button"
         this.$sendBtn.innerHTML = "평가하기"
-
+        this.$sendBtn.addEventListener('click', ()=>{
+            const text = this.$textarea.value
+            onClick(text)
+        })
 
 
         this.$sender.appendChild(this.$textarea)
