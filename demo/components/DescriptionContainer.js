@@ -3,6 +3,7 @@ export default class DescriptionContainer {
         this.description = document.createElement('div')
         this.description.className = "description-container"
         $target.appendChild(this.description);
+        this.render()
     }
 
     setState(data) {

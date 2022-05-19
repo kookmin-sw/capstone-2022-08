@@ -3,6 +3,7 @@ export default class ResultContainer {
         this.result = document.createElement('div')
         this.result.className = "result-container"
         $target.appendChild(this.result);
+        this.render()
     }
 
     setState(data) {
